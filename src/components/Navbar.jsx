@@ -1,10 +1,13 @@
 import React from "react";
+
 import gitlogo from "../assets/git-logo.svg";
-export const Navbar = () => {
-  const navstyle = {
-    // display:'flex',
-    // backgroundColor:'#013db5'
-  };
+
+export const Navbar = ({handel}) => {
+  function onClick(i) {
+    handel(i);
+  }
+
+  const navstyle = {};
 
   const imgStyle = {};
   const imgDivStyle = {};
@@ -26,24 +29,28 @@ export const Navbar = () => {
             <li
               style={liStyle}
               className="text-xl text-white font-semibold hover:text-blue-800 hover:underline"
+              onClick={() => onClick(0)}
             >
               Home
             </li>
             <li
               style={liStyle}
               className="text-xl text-white font-semibold hover:text-blue-800 hover:underline"
+              onClick={() => onClick(1)}
             >
               Portfolio
             </li>
             <li
               style={liStyle}
               className="text-xl text-white font-semibold hover:text-blue-800 hover:underline"
+              onClick={() => onClick(2)}
             >
               Team
             </li>
             <li
               style={liStyle}
               className="text-xl text-white font-semibold hover:text-blue-800 hover:underline"
+              onClick={() => onClick(3)}
             >
               Contact
             </li>
