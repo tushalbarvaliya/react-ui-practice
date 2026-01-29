@@ -1,7 +1,18 @@
-import React from 'react'
-
+import React from "react";
+import { HomePart1 } from "./HomePart1";
+import { HomePart2 } from "./HomePart2";
+import { HomePart3 } from "./HomePart3";
+import { HomePart4 } from "./HomePart4";
 export const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <HomePart1/>
+      <HomePart2/>
+      <HomePart3/>
+      <HomePart4/>
+
+      
+      
+    </>
+  );
+};

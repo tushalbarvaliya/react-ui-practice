@@ -1,59 +1,51 @@
-import React from "react";
-
 import gitlogo from "../assets/git-logo.svg";
+import styled from "styled-components";
 
-export const Navbar = ({handel}) => {
+const Styledlist = styled.li`
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+  }
+`;
+
+export const Navbar = ({ handel }) => {
   function onClick(i) {
     handel(i);
   }
 
-  const navstyle = {};
+  const navstyle = {
+    display: "flex",
+    justifyContent: "space-between",
+    paddingRight: "3rem",
+    paddingLeft: "0.5rem",
+    alignItems: "center",
+    position: "sticky",
+    width: "100%",
+    top: "0",
+    backgroundColor: "black",
+  };
+  const imgDivStyle = { display: "flex", alignItems: "center" };
+  const ulStyle = { display: "flex", gap: "1rem" };
 
-  const imgStyle = {};
-  const imgDivStyle = {};
-
-  const ulStyle = {};
-  const liStyle = {};
   return (
     <>
-      <nav
-        style={navstyle}
-        className="flex justify-between mx-12 items-center "
-      >
-        <div style={imgDivStyle} className="flex items-center">
-          <img src={gitlogo} alt="" style={imgStyle} />
+      <nav style={navstyle}>
+        <div style={imgDivStyle}>
+          <img src={gitlogo} alt="" />
           <h1 className="text-5xl font-bold self-end text-white">GitHub</h1>
         </div>
         <div>
-          <ul style={ulStyle} className="flex gap-4">
-            <li
-              style={liStyle}
-              className="text-xl text-white font-semibold hover:text-blue-800 hover:underline"
-              onClick={() => onClick(0)}
-            >
-              Home
-            </li>
-            <li
-              style={liStyle}
-              className="text-xl text-white font-semibold hover:text-blue-800 hover:underline"
-              onClick={() => onClick(1)}
-            >
-              Portfolio
-            </li>
-            <li
-              style={liStyle}
-              className="text-xl text-white font-semibold hover:text-blue-800 hover:underline"
-              onClick={() => onClick(2)}
-            >
-              Team
-            </li>
-            <li
-              style={liStyle}
-              className="text-xl text-white font-semibold hover:text-blue-800 hover:underline"
-              onClick={() => onClick(3)}
-            >
-              Contact
-            </li>
+          <ul style={ulStyle}>
+            <Styledlist onClick={() => onClick(0)}>Home</Styledlist>
+            <Styledlist onClick={() => onClick(1)}>Portfolio</Styledlist>
+            <Styledlist onClick={() => onClick(2)}>Team</Styledlist>
+            <Styledlist onClick={() => onClick(3)}>Contact</Styledlist>
           </ul>
         </div>
       </nav>
