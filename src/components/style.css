@@ -1,63 +1,19 @@
-/* 
-.container {
-  display: flex;
-  margin: 1rem 2.5rem;  
-  justify-content: space-around;
-}
-
-.card {
-  margin: 0 1rem;  
-  width: 25%;      
-  text-align: center;
-}
-
-.card img {
-  height: 5rem;    
-  width: 5rem;     
-}
-
-.card h3 {
-  color: white;
-  font-size: 1.25rem;  
-  font-weight: bold;   
-  margin-top: 1rem;    
-}
-
-.card p {
-  color: #9ca3af;     
-  font-size: 0.875rem;
-  font-weight: 600;   
-  margin-top: 1rem;   
-}
-
-.card.mt-20 {
-  margin-top: 5rem;    
-}
-
-.card.mt-40 {
-  margin-top: 10rem;   
-} */
-
-
-
-/* Container */
 .home-part4 {
   width: 100%;
   margin-bottom: 5rem;
 }
 
-/* Headings */
 .contact-title {
   text-align: center;
-  font-size: 1.875rem; /* text-3xl */
+  font-size: 1.875rem;
   font-weight: 700;
   background: linear-gradient(to top, #facc15, #dc2626);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .contact-heading {
-  font-size: 3.75rem; /* text-6xl */
+  font-size: 3.75rem; 
   color: white;
   text-align: center;
 }
@@ -69,22 +25,19 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Paragraph */
 .contact-desc {
   text-align: center;
   margin-top: 1rem;
-  color: #64748b; /* slate-500 */
+  color: #64748b; 
   font-weight: 700;
 }
 
-/* Form */
 .contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* Input row */
 .input-row {
   display: flex;
   justify-content: center;
@@ -92,9 +45,8 @@
   margin-top: 1rem;
 }
 
-/* Inputs */
 .contact-input {
-  background-color: #262626; /* neutral-800 */
+  background-color: #262626; 
   height: 2.5rem;
   border-radius: 9999px;
   padding-left: 1rem;
@@ -115,14 +67,12 @@
   border: none;
 }
 
-/* Message wrapper */
 .message-row {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
 }
 
-/* Button */
 .submit-wrapper {
   margin: 0 auto;
 }
@@ -132,7 +82,7 @@
   border-radius: 1rem;
   margin-top: 1rem;
   color: white;
-  background-color: #1d4ed8; /* blue-700 */
+  background-color: #1d4ed8; 
   font-weight: 700;
   font-size: 1.125rem;
   border: none;
