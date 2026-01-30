@@ -1,11 +1,12 @@
 .home-part4 {
   width: 100%;
   margin-bottom: 5rem;
+  padding: 0 1rem;
 }
 
 .contact-title {
   text-align: center;
-  font-size: 1.875rem;
+  font-size: 1.875rem; 
   font-weight: 700;
   background: linear-gradient(to top, #facc15, #dc2626);
   background-clip: text;
@@ -21,14 +22,14 @@
 .gradient-text {
   font-weight: 800;
   background: linear-gradient(to top, #facc15, #dc2626);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .contact-desc {
   text-align: center;
   margin-top: 1rem;
-  color: #64748b; 
+  color: #64748b;
   font-weight: 700;
 }
 
@@ -46,8 +47,8 @@
 }
 
 .contact-input {
-  background-color: #262626; 
-  height: 2.5rem;
+  background-color: #262626;
+  height: 2.75rem;
   border-radius: 9999px;
   padding-left: 1rem;
   color: white;
@@ -58,9 +59,9 @@
 
 .message-input {
   background-color: #262626;
-  height: 5rem;
-  border-radius: 9999px;
-  padding-left: 1rem;
+  height: 5.5rem;
+  border-radius: 1.5rem;
+  padding: 1rem;
   color: white;
   outline: none;
   width: 33.333%;
@@ -78,17 +79,76 @@
 }
 
 .submit-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 1rem;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   color: white;
-  background-color: #1d4ed8; 
+  background-color: #1d4ed8;
   font-weight: 700;
   font-size: 1.125rem;
   border: none;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .submit-btn:hover {
   background-color: #2563eb;
+}
+
+@media (max-width: 640px) {
+  .contact-title {
+    font-size: 1.25rem;
+  }
+
+  .contact-heading {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+
+  .contact-desc {
+    font-size: 0.875rem;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .contact-input {
+    width: 100%;
+  }
+
+  .message-input {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .contact-heading {
+    font-size: 3rem;
+  }
+
+  .contact-input {
+    width: 40%;
+  }
+
+  .message-input {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-input {
+    width: 22%;
+  }
+
+  .message-input {
+    width: 30%;
+  }
 }
