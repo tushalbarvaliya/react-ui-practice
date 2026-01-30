@@ -15,16 +15,16 @@ export const HomePart4 = () => {
 
       <form className="contact-form">
         <div className="input-row">
-          <input className="contact-input" />
-          <input className="contact-input" />
+          <input className="contact-input" type="text" placeholder="Enter Your Name"/>
+          <input className="contact-input" type="email" placeholder="Enter Your Email"/>
         </div>
 
         <div className="message-row">
-          <input className="message-input" />
+          <input className="message-input"type="text" placeholder="Enter Your Message..."/>
         </div>
 
         <div className="submit-wrapper">
-          <button className="submit-btn">Submit</button>
+          <button className="submit-btn" type="submit">Submit</button>
         </div>
       </form>
     </div>

@@ -13,12 +13,12 @@ export const HomePart1 = () => {
 
           <div className="flex flex-col sm:flex-row gap-3 mt-6">
             <input
-              type="text"
+              type="email"
               placeholder="Enter your email"
-              className="bg-neutral-800 h-10 sm:h-12 rounded-3xl pl-4 text-white outline-0 w-full sm:w-auto flex-1"
+              className="bg-neutral-800 h-10 py-2 sm:h-12  rounded-3xl pl-4 text-white outline-0 w-full sm:w-auto flex-1"
             />
 
-            <button className="px-6 py-2 bg-blue-600 hover:bg-blue-500 rounded-3xl font-bold capitalize transition">
+            <button className="px-6 py-2 bg-blue-600 hover:bg-blue-500 rounded-3xl font-bold capitalize transition" type="submit">
               Get Early Access
             </button>
           </div>
